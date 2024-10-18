@@ -103,9 +103,15 @@ public class CalculatorFrame extends JFrame {
         @Override
         public void actionPerformed(ActionEvent event) {
             // Action à effectuer lors du clic sur le bouton Accueil
-
             // Par exemple, fermer la calculatrice
             dispose();
         }
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            CalculatorFrame frame = new CalculatorFrame();
+            frame.setVisible(true);
+        });
     }
 }
